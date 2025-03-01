@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+   <style>
+    .poppins-regular {
+    font-family: "Poppins", sans-serif;
+  
+    }
+    
+   </style>
+</head>
+
+<body class="poppins-regular bg-blue-50">
+    <header class="md:container mx-auto" >
+
+        <nav class="navbar bg-base-100 shadow-sm justify-between rounded-lg ">
+            <div class="flex gap-1 ml-2">
+               <img src="./assets/logo.png" alt="">
+               <h2 class=" text-2xl p-4">Dev <span class="font-bold">Board</span> </h2> 
+            </div>
+
+            <div class="bg-blue-500 w-30 rounded-lg p-2 ml-24 mt-6 ">
+                <button class="text-white">Back to Desk</button>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="md:container mx-auto" >
+        <section >
+            <div class="mt-8 pb-8 ml-150 ">
+                <h2 class="text-2xl font-bold">Blogs</h2>
+            </div>
+
+            <!-- Questions part -->
+            <div class="mb-4 p-4 bg-base-100 shadow-sm  rounded">
+                <h3 class="text-xl font-bold">Question-1: What are the different ways to select an element in the DOM?
+                </h3>
+                <hr class="mt-6 border-dashed">
+                <p class="text-xl mt-10">There are many ways to select elements using the DOM , here are some common ones :
+                1.getElementById, 2.getElementsByClassName, 3.getElementsByTagName, 4.querySelector,  5.querySelectorAll   
+                </p>
+             </div>
+
+             <!-- Question-2 -->
+             <div class="mb-4 p-4 bg-base-100 shadow-sm  rounded">
+                <h3 class="text-xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </h3>
+                <hr class="mt-6 border-dashed">
+                <p class="text-xl mt-10">
+                    innerHTML : Returns all html content inside element and tags.
+                    innerText : Returns all text inside an element.
+                    textContent : Used to get the visible & hidden text content of an element. 
+                </p>
+             </div>
+
+            <!-- Questions part 3-->
+            <div class="mb-4 p-4 bg-base-100 shadow-sm  rounded">
+                <h3 class="text-xl font-bold"> Question-3: What is event delegation in the DOM?
+                </h3>
+                <hr class="mt-6 border-dashed">
+                <p class="text-xl mt-10">In event delegation the parent element handles events for child elements,this leverages the "event bubbling" where events triggered on a child element propagate up the DOM tree to its ancestors.</p>
+             </div>
+
+             <!-- Question-4 -->
+             <div class="mb-4 p-4 bg-base-100 shadow-sm  rounded">
+                <h3 class="text-xl font-bold">     Question-4: What is event bubbling in the DOM?
+                </h3>
+                <hr class="mt-6 border-dashed">
+                <p class="text-xl mt-10">Event bubbling is a method where it starts from the target element and continues until it reaches the root.</p>
+             </div>
+
+             <!-- Question-5 -->
+             <div class="mb-4 p-4 bg-base-100 shadow-sm  rounded">
+                <h3 class="text-xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?
+                </h3>
+                <hr class="mt-6 border-dashed">
+                <p class="text-xl mt-10 ">Using createElement() to create an element, appendChild() to add an element and removeChild() to remove an element.</p>
+             </div>
+
+
+        </section>
+    </main>
+    
+</body>
+</html>
