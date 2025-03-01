@@ -36,7 +36,7 @@
             <div class="flex gap-2">
                 <div class="flex gap-1 bg-blue-50  p-2 my-3 w-25 h-12 rounded-full justify-around">
                    <img src="./assets/checkbox.png" alt=""> 
-                   <p class="font-bold text-2xl">23</p>
+                   <p id="increase" class="font-bold text-2xl">23</p>
                 </div>
                 <div class=" bg-blue-50 pt-1 p-2 my-3 w-13 h-12 justify-center items-center rounded-full">
                     <img src="./assets/theme-btn.png" alt="">
@@ -55,7 +55,7 @@
                         </div>
                         <div class="m-6">
                             <h3>Task Assigned</h3>
-                            <p class="text-2xl font-bold ">05</p>
+                            <p id="decrease" class="text-2xl font-bold ">06</p>
                         </div>
                     </div>
 
@@ -97,7 +97,7 @@
                             </div>
 
                             <div class="bg-blue-500 m-4 w-30 rounded-lg p-2">
-                                <button class="text-white">Completed</button>
+                                <button onclick="b()" id="complete-btn"   class="text-white">Completed</button>
                             </div>
 
                         </div>
@@ -122,7 +122,7 @@
                             </div>
 
                             <div class="bg-blue-500 m-4 w-30 rounded-lg p-2">
-                                <button class="text-white">Completed</button>
+                                <button onclick="b()" onclick="disableBtn()" id="complete-btn" class="text-white">Completed</button>
                             </div>
 
                         </div>
@@ -148,7 +148,7 @@
                             </div>
 
                             <div class="bg-blue-500 m-4 w-30 rounded-lg p-2">
-                                <button class="text-white">Completed</button>
+                                <button onclick="b()" id="complete-btn" class="text-white">Completed</button>
                             </div>
 
                         </div>
@@ -173,7 +173,7 @@
                             </div>
 
                             <div class="bg-blue-500 m-4 w-30 rounded-lg p-2">
-                                <button class="text-white">Completed</button>
+                                <button onclick="b()" id="complete-btn" class="text-white">Completed</button>
                             </div>
 
                         </div>
@@ -198,7 +198,7 @@
                             </div>
 
                             <div class="bg-blue-500 m-4 w-30 rounded-lg p-2">
-                                <button class="text-white">Completed</button>
+                                <button onclick="b()" id="complete-btn" class="text-white">Completed</button>
                             </div>
 
                         </div>
@@ -223,7 +223,7 @@
                             </div>
 
                             <div class="bg-blue-500 m-4 w-30 rounded-lg p-2">
-                                <button class="text-white">Completed</button>
+                                <button onclick="b()"   id="complete-btn" class="text-white">Completed</button>
                             </div>
 
                         </div>
@@ -258,6 +258,8 @@
             </section>
         </section>
     </main>
+
+    <script src="script/script.js"></script>
 
     <footer>
 
