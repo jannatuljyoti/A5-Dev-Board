@@ -32,15 +32,6 @@ document.querySelectorAll("#complete-btn").forEach(button=>{
 })
 
 
-
-
-
-
-
-function disableBtn(){
-    document.getElementById("complete-btn").disabled=true;
-}
-
 document.getElementById("discover").addEventListener("click",function(){
     window.location.href="question.html";
 

@@ -24,8 +24,8 @@
     #complete-btn:disabled{
         background-color:gray;
         
-        opacity: 0.5;
-        disabled:(bg-blue-50);
+        opacity: 0.3;
+        
        
         
     }
@@ -95,7 +95,7 @@
                           <h5 >ShopEase</h5>
                         </div>
 
-                        <h2 class="text-xl font-bold m-4">Fix Mobile Button Issue </h2>
+                        <h2 id="title" class="text-xl font-bold m-4">Fix Mobile Button Issue </h2>
 
                         <div class="bg-base-100  rounded-lg m-4 p-3 ">
                             <p class="line-clamp-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
@@ -107,8 +107,8 @@
                             <p class="font-bold">21 March 2025</p>
                             </div>
 
-                            <div  class="bg-blue-500 m-4 w-30 rounded-lg p-2">
-                                <button onclick="b()"   id="complete-btn"   class="text-white ">Completed</button>
+                            <div class="bg-blue-500 m-4 w-30 rounded-lg p-2">
+                                <button onclick="b()"  id="complete-btn"    class="text-white ">Completed</button>
                             </div>
 
                         </div>
@@ -120,7 +120,7 @@
                           <h5 >CloudSync</h5>
                         </div>
 
-                        <h2 class="text-xl font-bold m-4">Add Dark Mode </h2>
+                        <h2 id="title" class="text-xl font-bold m-4">Add Dark Mode </h2>
 
                         <div class="bg-base-100  rounded-lg m-4 p-3 ">
                             <p class="line-clamp-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
@@ -145,7 +145,7 @@
                           <h5 >SwiftPay</h5>
                         </div>
 
-                        <h2 class="text-xl font-bold m-4">Optimize  Home page e </h2>
+                        <h2 id="title" class="text-xl font-bold m-4">Optimize  Home page e </h2>
 
                         <div class="bg-base-100  rounded-lg m-4 p-3 ">
                             <p class="line-clamp-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -171,7 +171,7 @@
                           <h5 >Meta</h5>
                         </div>
 
-                        <h2 class="text-xl font-bold m-4">Add new emoji 🤲 </h2>
+                        <h2 id="title" class="text-xl font-bold m-4">Add new emoji 🤲 </h2>
 
                         <div class="bg-base-100  rounded-lg m-4 p-3 ">
                             <p class="line-clamp-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
@@ -196,7 +196,7 @@
                           <h5 >Google LLC</h5>
                         </div>
 
-                        <h2 class="text-xl font-bold m-4">Integrate OpenAI API  </h2>
+                        <h2 id="title" class="text-xl font-bold m-4">Integrate OpenAI API  </h2>
 
                         <div class="bg-base-100  rounded-lg m-4 p-3 ">
                             <p class="line-clamp-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
@@ -221,7 +221,7 @@
                           <h5 >Glassdoar</h5>
                         </div>
 
-                        <h2 class="text-xl font-bold m-4">Improve Job searching </h2>
+                        <h2 id="title" class="text-xl font-bold m-4">Improve Job searching </h2>
 
                         <div class="bg-base-100  rounded-lg m-4 p-3 ">
                             <p class="line-clamp-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
@@ -248,25 +248,29 @@
             <section class="w-1/4 bg-base-100 mb-7 rounded-lg">
                 <div class="flex mt-5 justify-center gap-4">
                     <img src="./assets/activity.png" alt="">
-                <p>Activity Log</p>
+                <p id="activity">Activity Log</p>
                 </div>
 
 
                 <div class="bg-blue-500 w-30 rounded-lg p-2 ml-32 mt-6 ">
-                    <button class="text-white">Clear History</button>
+                    <button id="clear-data" class="text-white">Clear History</button>
                 </div>
                
                 <hr class="mt-6 border-dashed border-blue-100">
 
-               <div class="rounded-xl bg-blue-50 p-4 m-6">
-                <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+               <div class="rounded-xl bg-blue-50 p-4 m-6  leading-normal space-y-3">
+                <p id="description"></p>
                </div>
 
+               
 
-               <div class="rounded-xl bg-blue-50 p-4 m-6">
-                <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-               </div>
-                
+
+               
+
+               
+
+
+               
             </section>
         </section>
     </main>
@@ -277,6 +281,8 @@
     <script src="theme.js"></script>
     <script src="date.js"></script>
     <script src="disable.js"></script>
+    <script src="activity.js"></script>
+    
 
     
 </body>
