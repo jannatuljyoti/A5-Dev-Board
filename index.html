@@ -39,7 +39,7 @@
                    <p id="increase" class="font-bold text-2xl">23</p>
                 </div>
                 <div class=" bg-blue-50 pt-1 p-2 my-3 w-13 h-12 justify-center items-center rounded-full">
-                    <img src="./assets/theme-btn.png" alt="">
+                    <img id="theme" src="./assets/theme-btn.png" alt="">
             </div>
                 </div>
         </nav>
@@ -61,7 +61,7 @@
 
                     <div class="flex bg-linear-to-r from-blue-600 to-indigo-300 rounded-lg w-2/4 h-32 gap-3 hover:scale-110 ">
                         <img class="p-4 ml-6" src="./assets/board.png" alt="">
-                        <p class="text-white p-6 text-2xl font-medium">Discover Something <br> New Today</p>
+                        <p id="discover" class="text-white p-6 text-2xl font-medium">Discover Something <br> New Today</p>
                     </div>
 
 
@@ -69,11 +69,13 @@
                         <div class="bg-white m-6 ml-10 p-4 w-15 h-15 rounded-full">
                             <img src="./assets/calender.png" alt="">
                         </div>
-                        <p class="my-6 text-xl">Wed , <br>
+                        <p id="date" class="my-6 text-xl">Wed , <br>
                             <span class="font-bold">Jul 28 2025</span> </p>
 
                     </div>
                 </div>
+
+                <hr class="mt-6 border-dashed border-blue-100">
 
                 <!-- cards -->
 
@@ -241,10 +243,11 @@
                 </div>
 
 
-                <div class="bg-blue-500 w-30 rounded-lg p-2 ml-24 mt-6 ">
+                <div class="bg-blue-500 w-30 rounded-lg p-2 ml-32 mt-6 ">
                     <button class="text-white">Clear History</button>
                 </div>
                
+                <hr class="mt-6 border-dashed border-blue-100">
 
                <div class="rounded-xl bg-blue-50 p-4 m-6">
                 <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
@@ -259,11 +262,12 @@
         </section>
     </main>
 
+    
+
     <script src="script/script.js"></script>
+    <script src="script/theme.js"></script>
+    <script src="script/date.js"></script>
 
-    <footer>
-
-    </footer>
     
 </body>
 </html>

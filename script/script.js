@@ -1,11 +1,10 @@
 
 function b(){
     alert("Board Updated Successfully");
-    const button=document.querySelectorAll("#complete-btn");
-    button.disabled=true;
+    // const button=document.querySelectorAll("#complete-btn");
+    // button.disabled=true;
 }
 
-// const allButton = document.querySelectorAll("complete-btn");
 
 document.querySelectorAll("#complete-btn").forEach(button=>{
     button.addEventListener("click",function(){
@@ -35,16 +34,20 @@ document.querySelectorAll("#complete-btn").forEach(button=>{
 })
 
 
-// let count = 6;
-// let btn = document.querySelectorAll("#complete-btn");
-// let display = document.getElementById("decrease");
 
-// btn.onclick = function(){
-//     count--;
-//     display.innerHTML = count;
-// }
+
+
 
 
 function disableBtn(){
-    document.getElementById("complete-btn").disable=true;
+    document.getElementById("complete-btn").disabled=true;
 }
+
+document.getElementById("discover").addEventListener("click",function(){
+    window.location.href='/question.html';
+
+})
+
+
+
+
