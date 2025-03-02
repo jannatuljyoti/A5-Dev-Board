@@ -1,8 +1,6 @@
 
 function b(){
     alert("Board Updated Successfully");
-    // const button=document.querySelectorAll("#complete-btn");
-    // button.disabled=true;
 }
 
 

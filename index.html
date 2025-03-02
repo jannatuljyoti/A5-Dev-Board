@@ -20,6 +20,15 @@
     font-family: "Poppins", sans-serif;
   
     }
+
+    #complete-btn:disabled{
+        background-color:gray;
+        
+        opacity: 0.5;
+        disabled:(bg-blue-50);
+       
+        
+    }
     
    </style>
 
@@ -98,8 +107,8 @@
                             <p class="font-bold">21 March 2025</p>
                             </div>
 
-                            <div class="bg-blue-500 m-4 w-30 rounded-lg p-2">
-                                <button onclick="b()" id="complete-btn"   class="text-white">Completed</button>
+                            <div  class="bg-blue-500 m-4 w-30 rounded-lg p-2">
+                                <button onclick="b()"   id="complete-btn"   class="text-white ">Completed</button>
                             </div>
 
                         </div>
@@ -267,6 +276,7 @@
     <script src="script/script.js"></script>
     <script src="script/theme.js"></script>
     <script src="script/date.js"></script>
+    <script src="script/disable.js"></script>
 
     
 </body>
